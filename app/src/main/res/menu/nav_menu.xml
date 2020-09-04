@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_add_claim"
+            android:icon="@drawable/ic_add_circle"
+            android:title="NUEVO SINIESTRO" />
+
+        <item
+            android:id="@+id/nav_claim"
+            android:icon="@drawable/ic_whatshot"
+            android:title="SINIESTROS ENCARGADOS" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_folder_comp"
+            android:title="DOC. COMPLETOS" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_folder_incomp"
+            android:title="DOC. INCOMPLETOS" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp3">
+        <item
+            android:id="@+id/nav_message1"
+            android:icon="@drawable/ic_phonelink_coord"
+            android:title="COORDINADOS" />
+        <item
+            android:id="@+id/nav_chat1"
+            android:icon="@drawable/ic_phonelink_no_coord"
+            android:title="POR COORDINAR" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+        </menu>
+
+    </item>
+
+</menu>

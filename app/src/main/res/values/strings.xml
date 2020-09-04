@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TheClaimMaster</string>
+    <string name="login">Login</string>
+    <string name="registro">Crear cuenta Usuario IPM</string>
+    <string name="usuario">Usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="clave">Clave</string>
+
+
+    <string name="nombre">Nombre</string>
+    <string name="apellido_pat">Apellido Paterno</string>
+    <string name="apellido_mat">Apellido Materno</string>
+    <string name="dni">DNI</string>
+    <string name="btn_registrar">Registrar</string>
+
+    <string name="celular">Celular</string>
+
+    <string name="correo">Correo electronico</string>
+
+    <string name="logo">Logo de la aplicacion.</string>
+
+    <string name="reg">Registro Usuario IPM</string>
+
+    <string name="txt_lista_siniestros">Lista de Siniestros</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="date_picker_fecha_siniestro">Fecha de Ocurrencia del Siniestro</string>
+
+    <string name="fecha01">Fecha de Ocurrencia del Siniestro</string>
+    <string name="fecha02">Fecha de Aviso A Aseguradora</string>
+    <string name="fecha03">Fecha de Encargo A Ajustador</string>
+    <string name="fecha04">Fecha de Solicitud de Documentos</string>
+    <string name="fecha05">Fecha de Entrega de Documentación Completa</string>
+    <string name="fecha06">Fecha de Coordinación de Inspección</string>
+    <string name="fecha07">Fecha de Inspección</string>
+    <string name="fecha08">Fecha de Entrega de Liquidación A Asegurado</string>
+    <string name="fecha09">Fecha de Devolución de Liquidación Firmada A Ajustador</string>
+    <string name="fecha10">Fecha de Envío de Liquidación a Aseguradora</string>
+
+    <string name="new_claim">New Claim</string>
+    <string name="delete_claim">Delete Claim</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d claims</string>
+
+
+    <string name="claim_report">%1$s! The claim was discovered on %2$s. %3$s.</string>
+    <string name="claim_report_solved">The case is solved</string>
+    <string name="claim_report_unsolved">The case is not solved</string>
+    <string name="claim_report_no_suspect">there is no suspect</string>
+    <string name="claim_report_suspect">the suspect is %s.</string>
+    <string name="claim_report_subject">Criminal Intent Claim Report</string>
+    <string name="send_report">Send Claim Report via:</string>
+
+
+
+
+
+</resources>

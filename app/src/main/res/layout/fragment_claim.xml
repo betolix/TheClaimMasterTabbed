@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="25dp">
+
+
+            <TextView
+                android:id="@+id/textViewLabelAsegurado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Asegurado:"
+                android:textSize="20sp"
+
+                app:layout_constraintBottom_toTopOf="@+id/btnAddFromContacts"
+                app:layout_constraintEnd_toStartOf="@+id/textViewNombreAsegurado"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/textViewNombreAsegurado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelAsegurado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelAsegurado"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelAsegurado" />
+
+            <Button
+                android:id="@+id/btnAddFromContacts"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Agregar desde Contactos"
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/lblDetalleSiniestro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelAsegurado" />
+
+            <TextView
+                android:id="@+id/lblDetalleSiniestro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/background_text_view"
+                android:text="Detalle Siniestro: "
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewHeadString"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddFromContacts" />
+
+
+            <EditText
+                android:id="@+id/textViewSiniestro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lblDetalleSiniestro"
+                app:layout_constraintBottom_toTopOf="@+id/textViewHeadString"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblDetalleSiniestro"
+                app:layout_constraintTop_toTopOf="@+id/lblDetalleSiniestro"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/textViewHeadString"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="HEAD STRING"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTags"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetalleSiniestro" />
+
+            <TextView
+                android:id="@+id/textViewTags"
+                android:layout_width="381dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TAGS"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelPoliza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHeadString" />
+
+            <TextView
+                android:id="@+id/textViewLabelPoliza"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Poliza"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelDireccion"
+                app:layout_constraintEnd_toStartOf="@+id/textVewTipoPoliza"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTags" />
+
+            <TextView
+                android:id="@+id/textVewTipoPoliza"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="PRE3"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelPoliza"
+                app:layout_constraintEnd_toStartOf="@+id/textViewNumeroPoliza"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelPoliza"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelPoliza" />
+
+            <TextView
+                android:id="@+id/textViewNumeroPoliza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="2001207368"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelPoliza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textVewTipoPoliza"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelPoliza" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Dirección Poliza"
+                app:layout_constraintBottom_toTopOf="@id/textViewLabelSumaAseguradaEdificacion"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDireccion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelPoliza" />
+
+            <TextView
+                android:id="@+id/textViewDireccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelDireccion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelDireccion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelDireccion" />
+
+            <TextView
+                android:id="@+id/textViewLabelSumaAseguradaEdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Suma Asegurada Edificación"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelSumaAseguradaContenido"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMonedaSAEdificacion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelDireccion" />
+
+
+            <TextView
+                android:id="@+id/textViewMonedaSAEdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelSumaAseguradaEdificacion"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMontoSAEdificacion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelSumaAseguradaEdificacion"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSumaAseguradaEdificacion" />
+
+            <TextView
+                android:id="@+id/textViewMontoSAEdificacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaAseguradaEdificacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaSAEdificacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaAseguradaEdificacion" />
+
+            <TextView
+                android:id="@+id/textViewLabelSumaAseguradaContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Suma Asegurada Contenido"
+                app:layout_constraintBottom_toTopOf="@+id/textViewGPSLongitud"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMonedaSAContenido"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSumaAseguradaEdificacion" />
+
+            <TextView
+                android:id="@+id/textViewMonedaSAContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaAseguradaContenido"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMontoSAContenido"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelSumaAseguradaContenido"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaAseguradaContenido" />
+
+            <TextView
+                android:id="@+id/textViewMontoSAContenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaAseguradaContenido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaSAContenido"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaAseguradaContenido" />
+
+
+            <TextView
+                android:id="@+id/textViewGPSLongitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="GPS: Longitud"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelDNI"
+                app:layout_constraintEnd_toStartOf="@+id/textViewGPSLatitud"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSumaAseguradaContenido" />
+
+            <TextView
+                android:id="@+id/textViewGPSLatitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="GPS: Latitud"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewGPSLongitud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewGPSLongitud"
+                app:layout_constraintTop_toTopOf="@+id/textViewGPSLongitud" />
+
+            <Button
+                android:id="@+id/btnGetGPS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Obtener Posición GPS"
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewGPSLongitud" />
+
+            <TextView
+                android:id="@+id/textViewLabelDNI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="DNI"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelCelular"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDNI"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGetGPS" />
+
+            <TextView
+                android:id="@+id/textViewDNI"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelDNI"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelDNI"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelDNI" />
+
+            <TextView
+                android:id="@+id/textViewLabelCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Celular"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelEmail"
+                app:layout_constraintEnd_toStartOf="@+id/textViewCelular"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelDNI" />
+
+            <TextView
+                android:id="@+id/textViewCelular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="999999999"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelCelular"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonCall"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelCelular"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelCelular" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCall"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCelular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewCelular"
+                app:srcCompat="@drawable/ic_call" />
+
+            <TextView
+                android:id="@+id/textViewLabelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Email"
+                app:layout_constraintBottom_toTopOf="@id/textViewLabelSumaReclamadaEdificacion"
+                app:layout_constraintEnd_toStartOf="@+id/textViewEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelCelular" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.189"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelEmail"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelEmail" />
+
+            <TextView
+                android:id="@+id/textViewLabelSumaReclamadaEdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Suma Reclamada Edificación"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelSumaReclamadaContenido"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMonedaSREdificacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewLabelEmail" />
+
+            <TextView
+                android:id="@+id/textViewMonedaSREdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaReclamadaEdificacion"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMontoSREdificacion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelSumaReclamadaEdificacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaReclamadaEdificacion" />
+
+            <TextView
+                android:id="@+id/textViewMontoSREdificacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaReclamadaEdificacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaSREdificacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaReclamadaEdificacion" />
+
+            <TextView
+                android:id="@+id/textViewLabelSumaReclamadaContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/background_text_view"
+                android:text="Suma Reclamada Contenido"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLabelTasacion"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMonedaSRContenido"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSumaReclamadaEdificacion" />
+
+
+            <TextView
+                android:id="@+id/textViewMonedaSRContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaReclamadaContenido"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMontoSREdificacion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelSumaReclamadaContenido"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaReclamadaContenido" />
+
+            <TextView
+                android:id="@+id/textViewMontoSRContenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelSumaReclamadaContenido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaSRContenido"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelSumaReclamadaContenido" />
+
+            <TextView
+                android:id="@+id/textViewLabelTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="TASACION"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSumaReclamadaContenido" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelTasacion" />
+
+            <TextView
+                android:id="@+id/textViewLabelDireccionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Direccion Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelTasacion" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelDireccionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelDireccionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelDireccionTasacion" />
+
+            <TextView
+                android:id="@+id/textViewLabelAreaTerrenoTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Area del Terreno Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelDireccionTasacion" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelAreaTerrenoTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelAreaTerrenoTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelAreaTerrenoTasacion" />
+
+            <TextView
+                android:id="@+id/textViewLabelValorTerrenoTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Valor del Terreno Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelAreaTerrenoTasacion" />
+
+            <TextView
+                android:id="@+id/textViewMonedaValorTerrenoTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelValorTerrenoTasacion"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelValorTerrenoTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelValorTerrenoTasacion" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewMonedaValorTerrenoTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaValorTerrenoTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewMonedaValorTerrenoTasacion" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelValorReconstruccionEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Valor de Reconstruccion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelValorTerrenoTasacion" />
+
+            <TextView
+                android:id="@+id/textViewMonedaValorReconstruccionEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelValorReconstruccionEdificacionTasacion"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelValorReconstruccionEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelValorReconstruccionEdificacionTasacion" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewMonedaValorReconstruccionEdificacionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaValorReconstruccionEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewMonedaValorReconstruccionEdificacionTasacion" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelValorComercialEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Valor Comercial Edificacion Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelValorReconstruccionEdificacionTasacion" />
+
+            <TextView
+                android:id="@+id/textViewMonedaValorComercialEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="USD"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelValorComercialEdificacionTasacion"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelValorComercialEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelValorComercialEdificacionTasacion" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewMonedaValorComercialEdificacionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewMonedaValorComercialEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewMonedaValorComercialEdificacionTasacion" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelDescripcionEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Descripcion Edificacion Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelValorComercialEdificacionTasacion" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelDescripcionEdificacionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelDescripcionEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelDescripcionEdificacionTasacion" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelFechaConstruccionEdificacionTasacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/background_text_view"
+                android:text="Fecha Construccion Edificacion Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelDescripcionEdificacionTasacion" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelFechaConstruccionEdificacionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelFechaConstruccionEdificacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelFechaConstruccionEdificacionTasacion" />
+
+
+            <TextView
+                android:id="@+id/textViewLabelFechaRealizacionTasacion"
+                layout_constraintEnd_toStartOf="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="Fecha Realizacion Tasacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelFechaConstruccionEdificacionTasacion"
+                app:layout_constraintBottom_toTopOf="@+id/claim_photo"/>
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_text_view"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLabelFechaRealizacionTasacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewLabelFechaRealizacionTasacion"
+                app:layout_constraintTop_toTopOf="@+id/textViewLabelFechaRealizacionTasacion" />
+
+
+            <ImageView
+                android:id="@+id/claim_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelFechaRealizacionTasacion"
+                app:layout_constraintBottom_toTopOf="@+id/claim_camera"
+                app:srcCompat="@drawable/background_text_view_resalt" />
+
+            <ImageButton
+                android:id="@+id/claim_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/claim_photo"
+                app:layout_constraintBottom_toTopOf="@+id/btnSendBasicReport"
+                app:srcCompat="@drawable/ic_photo_camera" />
+
+            <Button
+                android:id="@+id/btnSendBasicReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="32dp"
+                android:text="ENVIAR INFORME DE INSPECCIÓN"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/claim_camera" />
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/floatingActionMenu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:menu_backgroundColor="@android:color/transparent"
+                app:menu_buttonSpacing="8dp"
+                app:menu_colorNormal="@color/indigo_500"
+                app:menu_fab_label=""
+                app:menu_fab_size="mini"
+                app:menu_icon="@drawable/ic_date"
+                app:menu_labels_textSize="14sp"
+                app:menu_openDirection="down"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Envío de Liquidación Firmada A Aseguradora"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Devolución de Liquidación Firmada A Ajustador"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Entrega de Liquidacion a Asegurado"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Inspección"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Coordinacion de inspeccion"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Entrega de Documentos"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Solicitud de Documentos"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Encargo a Ajustador"
+                    app:fab_size="mini" />
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Aviso a Aseguradora"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floatingActionItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_label="Fecha de Ocurrencia"
+                    app:fab_size="mini" />
+
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
